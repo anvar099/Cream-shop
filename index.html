@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/Home.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <title>Cream Shop</title>
+  </head>
+  <body>
+    <main class="home">
+      <!-- Navbar -->
+      <section class="navbar">
+        <div class="shipping-message">
+          <p class="shipping-message__text">
+            Free Shipping for all orders over $100
+          </p>
+        </div>
+        <div class="horyzontal-line__white"></div>
+        <div class="nav nav__container">
+          <input
+            type="checkbox"
+            name="nav__check"
+            id="nav__check"
+            class="nav__check"
+          />
+          <label for="nav__check" class="nav__hamburger">menu</label>
+          <div class="nav__logo">
+            <a href="./index.html" class="nav__logo-link"
+              ><img
+                class="logo__img"
+                src="./assets/images/logo.svg"
+                alt="nav logo"
+                loading="lazy"
+            /></a>
+          </div>
+          <div class="nav__cart-mobile">
+            <a href="#">Cart 1</a>
+          </div>
+          <div class="nav__layer-blur"></div>
+          <nav class="nav__bar">
+            <ul class="nav__links">
+              <li class="nav__item">
+                <a href="#"> Shop </a>
+              </li>
+              <li class="nav__item"><a href="#">About</a></li>
+              <li class="nav__item">
+                <a href="#"> Suncrase 101 </a>
+              </li>
+            </ul>
+            <ul class="nav__links">
+              <li class="nav__item">
+                <a href="#"> Account </a>
+              </li>
+              <li class="nav__item"><a href="#">Search</a></li>
+              <li class="nav__item cart"><a href="#">Cart (0)</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- Header -->
+      <header>
+        <div class="header__container">
+          <h4 class="header__subtitle">At vero eoset</h4>
+          <h1 class="header__title">Lorem ipsum de dolor amet</h1>
+          <div class="header__btn">
+            <a href="#">shop now</a>
+          </div>
+        </div>
+      </header>
+      <!-- Carousel -->
+      <section class="products__carousel">
+        <div class="products">
+          <div class="products__row">
+            <h2 class="products__title">Discover our products</h2>
+            <div class="products__arrow">
+              <div>
+                <a href="#" class="go_to_product">shop all</a>
+              </div>
+              <div>
+                <button class="prev__card">
+                  <img src="./assets/icons/prev-arrow.svg" alt="" />
+                </button>
+                <button class="next__card" onclick="changeBg('#7373d7');">
+                  <img src="./assets/icons/next-arrow.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__info">
+            <div class="product__container">
+              <div class="product">
+                <img
+                  class="product__img--new"
+                  src="./assets/images/new.png"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  class="product__img"
+                  src="./assets/images/product1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="horyzontal-line__product"></div>
+                <div class="product__link--add-to-cart">
+                  <a href="">+ Quick Shop</a>
+                </div>
+              </div>
+              <div class="product__description">
+                <p class="product__text">
+                  Your Skin But Better CC+ Cream with SPF50 12ml
+                </p>
+                <p class="product__price">$28.00</p>
+              </div>
+            </div>
+            <div class="product__container">
+              <div class="product">
+                <img
+                  class="product__img--sale"
+                  src="./assets/images/sale.png"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  class="product__img"
+                  src="./assets/images/product2.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="horyzontal-line__product"></div>
+                <div class="product__link--add-to-cart">
+                  <a href="">+ Quick Shop</a>
+                </div>
+              </div>
+              <div class="product__description">
+                <p class="product__text">KEM DUONG VT CICA - VT CICA CREAM</p>
+                <p class="product__price">$28.00 <del>$32.00</del></p>
+              </div>
+            </div>
+            <div class="product__container">
+              <div class="product">
+                <img
+                  class="product__img"
+                  src="./assets/images/product3.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="horyzontal-line__product"></div>
+                <div class="product__link--add-to-cart">
+                  <a href="">+ Quick Shop</a>
+                </div>
+              </div>
+              <div class="product__description">
+                <p class="product__text">
+                  Niche Beauty CCC Cream – Niche Beauty
+                </p>
+                <p class="product__price">$28.00</p>
+              </div>
+            </div>
+            <div class="product__container">
+              <div class="product">
+                <img
+                  class="product__img"
+                  src="./assets/images/product4.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="horyzontal-line__product"></div>
+                <div class="product__link--add-to-cart">
+                  <a href="">+ Quick Shop</a>
+                </div>
+              </div>
+              <div class="product__description">
+                <p class="product__text">ISIE Glow body lotion SPF45</p>
+                <p class="product__price">$28.00</p>
+              </div>
+            </div>
+            <div class="product__container">
+              <div class="product">
+                <img
+                  class="product__img"
+                  src="./assets/images/product5.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="horyzontal-line__product"></div>
+                <div class="product__link--add-to-cart">
+                  <a href="">+ Quick Shop</a>
+                </div>
+              </div>
+              <div class="product__description">
+                <p class="product__text">Universal Mineral body lotion SPF55</p>
+                <p class="product__price">$28.00</p>
+              </div>
+            </div>
+            <div class="product__container">
+              <div class="product">
+                <img
+                  class="product__img"
+                  src="./assets/images/product6.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="horyzontal-line__product"></div>
+                <div class="product__link--add-to-cart">
+                  <a href="">+ Quick Shop</a>
+                </div>
+              </div>
+              <div class="product__description">
+                <p class="product__text">Isle body oil SPF30</p>
+                <p class="product__price">$28.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brand name -->
+      <section class="brand-name">
+        <h3 class="brand-name__question">Why brand name?</h3>
+        <h2 class="brand-name__title--blue">Sed ut perspiciatis unde omy</h2>
+        <h2 class="brand-name__title">
+          At vero eos et accusamus et iusto odio dignissimos
+        </h2>
+        <div class="brand-name__row">
+          <div class="brand-name__item">
+            <img
+              class="item__img"
+              src="./assets/icons/cream (1) 1.svg"
+              alt=""
+            />
+            <h3>Lorem ipsum</h3>
+            <p class="item__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum
+            </p>
+          </div>
+          <div class="brand-name__item">
+            <img
+              class="item__img"
+              src="./assets/icons/cotton-swabs 1.svg"
+              alt=""
+            />
+            <h3>Sed ut perspiciatis unde</h3>
+            <p class="item__text">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident.
+            </p>
+          </div>
+          <div class="brand-name__item">
+            <img class="item__img" src="./assets/icons/gloss 1.svg" alt="" />
+            <h3>Ut enim ad minim</h3>
+            <p class="item__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum
+            </p>
+          </div>
+          <div class="brand-name__item">
+            <img
+              class="item__img"
+              src="./assets/icons/make-up-kit 1.svg"
+              alt=""
+            />
+            <h3>At vero eos eaccusamus</h3>
+            <p class="item__text">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Collections -->
+      <section class="collections">
+        <div class="collection__row">
+          <h2>Collections</h2>
+          <div class="collection__arrow">
+            <button class="prev__slide">
+              <img src="./assets/icons/prev-arrow.svg" alt="" />
+            </button>
+            <button class="next__slide" onclick="changeBg('#7373d7');">
+              <img src="./assets/icons/next-arrow.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <p class="collection__text">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum, Cream Shop
+        </p>
+        <div class="collection__carousel">
+          <div class="collection__post">
+            <img
+              class="post__img"
+              src="./assets/images/collection-img1.jpg"
+              loading="lazy"
+              alt=""
+            />
+            <p class="post__text">Sed ut perspiciatis</p>
+          </div>
+          <div class="collection__post">
+            <img
+              class="post__img"
+              src="./assets/images/collection-img2.png"
+              loading="lazy"
+              alt=""
+            />
+            <p class="post__text">Lorem ipsum dolor</p>
+          </div>
+          <div class="collection__post">
+            <img
+              class="post__img"
+              src="./assets/images/collection-img3.png"
+              loading="lazy"
+              alt=""
+            />
+            <p class="post__text">At vero eos</p>
+          </div>
+          <div class="collection__post">
+            <img
+              class="post__img"
+              src="./assets/images/collection-img4.jpg"
+              loading="lazy"
+              alt=""
+            />
+            <p class="post__text">Sed ut perspiciatis</p>
+          </div>
+          <div class="collection__post">
+            <img
+              class="post__img"
+              src="./assets/images/collection-img5.png"
+              loading="lazy"
+              alt=""
+            />
+            <p class="post__text">At vero eos</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ingredient">
+        <div class="ingredient__row">
+          <div class="ingredient__description">
+            <div class="description__container">
+              <h2 class="ingredient__title">
+                Neque porro quisquam est, qui dolorem
+              </h2>
+              <p class="ingredient__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation
+              </p>
+              <a class="ingredient__link" href="">ingredients glossary</a>
+            </div>
+          </div>
+          <div class="ingredient__img__container">
+            <img
+              class="ingredient__img"
+              src="./assets/images/bg_image.png"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="ingredient__row-second">
+          <div class="ingredient__img__container">
+            <img
+              class="ingredient__img"
+              src="./assets/images/Mask Group.png"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="ingredient__description">
+            <div class="description__container">
+              <h2 class="ingredient__title">Ut enim ad minima</h2>
+              <p class="ingredient__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation
+              </p>
+              <a class="ingredient__link" href="">about us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Featuring -->
+      <section class="featuring">
+        <div class="featuring__details">
+          <h3 class="featuring__subtitle">Featuring</h3>
+          <h1 class="featuring__name">Sed ut perspiciatis</h1>
+          <p class="featuring__text">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos
+            dolores et quas molestias excepturi sint occaecati cupiditate non
+            provident
+          </p>
+          <div class="featuring__btn">
+            <a href="" class="featuring__btn--link">shop now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- instagram post -->
+      <section class="instagram-post">
+        <div class="instagram-post__row">
+          <div class="insta-post__product">
+            <h2 class="post__name">Nemo enim ipsam</h2>
+            <a class="post__buy" href="">shop now</a>
+          </div>
+          <div class="insta-post__product--second">
+            <h2 class="post__name">Temporibus aute</h2>
+            <a class="post__buy" href="">shop now</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured">
+        <h3 class="featured__title">Featured</h3>
+        <div class="featred__row">
+          <div>
+            <img
+              class="featured__logo"
+              src="./assets/icons/featured-logo1.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="featured__logo"
+              src="./assets/icons/featured-logo2.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="featured__logo"
+              src="./assets/icons/featured-logo3.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="featured__logo"
+              src="./assets/icons/featured-logo4.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
+</html>
