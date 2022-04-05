@@ -1,5 +1,6 @@
 @import url(./navigation.css);
 @import url(./base.css);
+@import url(./footer.css);
 
 /* Header */
 header {
@@ -56,40 +57,6 @@ header {
   text-transform: uppercase;
   color: white;
   text-decoration: none;
-}
-@media (max-width: 992px) {
-  .header__title {
-    font-size: 6rem;
-  }
-}
-@media (max-width: 768px) {
-  .header__title {
-    font-size: 5rem;
-  }
-  .header__container {
-    margin: 0 50px;
-  }
-  .header__subtitle {
-    font-size: 1.4rem;
-  }
-}
-@media (max-width: 592px) {
-  .header__container {
-    margin: 0 20px;
-    top: 60%;
-  }
-  .header__title {
-    font-size: 4rem;
-    margin-bottom: 30px;
-  }
-  .header__btn {
-    width: 16rem;
-    height: 4rem;
-    border-radius: 2rem;
-  }
-  .header__btn a {
-    font-size: 1.4rem;
-  }
 }
 
 /* Carousel */
@@ -148,6 +115,10 @@ header {
   border: none;
   cursor: pointer;
 }
+.next__card:hover,
+.prev__card:hover {
+  background-color: #7373d7;
+}
 .products__info {
   margin-left: 4%;
   padding-right: 4%;
@@ -186,8 +157,6 @@ header {
 .product__link--add-to-cart {
   position: absolute;
   top: 50rem;
-  /* border-top: 1px solid #FFFFFF;
-  padding-top: 1.3rem; */
 }
 
 .product__link--add-to-cart a {
@@ -206,42 +175,8 @@ header {
   margin: 8px 0;
 }
 .product__price del {
-  color: #555555;
+  color: #7a7979;
   margin-left: 8px;
-}
-@media (max-width: 1200px) {
-  .product {
-    /* height: 43rem; */
-    width: 40vw;
-  }
-}
-@media (max-width: 768px) {
-  .products__row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .products__arrow {
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 1.6rem;
-  }
-  .product {
-    /* height: 43rem; */
-    width: 80vw;
-    height: 40rem;
-  }
-  .products__title {
-    font-size: 2.4rem;
-  }
-  .horyzontal-line__product {
-    top: 35rem;
-  }
-  .product__link--add-to-cart {
-    top: 36rem;
-  }
-  .product__text {
-    width: 80vw;
-  }
 }
 
 /* Brand Name */
@@ -280,7 +215,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 4%;
+  margin: 0 4% 8rem 4%;
 }
 .brand-name__item {
   width: 25.4rem;
@@ -310,45 +245,6 @@ header {
   color: #222222;
   text-align: center;
 }
-@media (max-width: 992px) {
-  .brand-name__title,
-  .brand-name__title--blue {
-    /* padding: 0 4%; */
-    text-align: center;
-  }
-  .brand-name__row {
-    overflow-x: auto;
-  }
-  .brand-name__item {
-    flex: 1 0 33%;
-    margin: 0 15px;
-  }
-}
-@media (max-width: 768px) {
-  .brand-name__question {
-    font-size: 1.4rem;
-  }
-  .brand-name__title,
-  .brand-name__title--blue {
-    font-size: 2.4rem;
-  }
-  .brand-name__item {
-    flex: 1 0 50%;
-    margin: 0;
-  }
-}
-@media (max-width: 592px) {
-  .brand-name__item {
-    flex: 1 0 100%;
-  }
-  .brand-name__title,
-  .brand-name__title--blue {
-    font-size: 2rem;
-  }
-  .item__img {
-    margin-top: 5rem;
-  }
-}
 
 /* Collection */
 .collections {
@@ -360,6 +256,7 @@ header {
   align-items: center;
   padding-top: 8rem;
   margin-left: 4%;
+  margin-bottom: 2rem;
 }
 .collection__row h2 {
   font-family: "Rubik";
@@ -381,6 +278,15 @@ header {
   color: white;
   border: none;
   cursor: pointer;
+}
+.prev__slide:hover,
+.next__slide:hover {
+  background-color: #ffffff;
+}
+.prev__slide:hover img,
+.next__slide:hover img {
+  filter: invert(61%) sepia(64%) saturate(4613%) hue-rotate(214deg)
+    brightness(91%) contrast(85%);
 }
 .collection__text {
   margin-left: 4%;
@@ -414,31 +320,6 @@ header {
   color: #ffffff;
   margin-top: 2rem;
   margin-bottom: 8rem;
-}
-
-@media (max-width: 768px) {
-  .collection__row {
-    padding-top: 4rem;
-  }
-  .collection__row h2 {
-    font-size: 3.2rem;
-  }
-  .collection__text {
-    font-size: 1.7rem;
-  }
-  .post__img {
-    width: 60vw;
-  }
-  .post__text {
-    font-size: 1.8rem;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
-  }
-}
-@media (max-width: 592px) {
-  .post__img {
-    width: 80vw;
-  }
 }
 
 /* ingredient */
@@ -494,41 +375,30 @@ header {
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
-  .ingredient__row {
-    flex-direction: column-reverse;
-  }
-  .ingredient__row-second {
-    flex-direction: column;
-  }
-  .ingredient__description,
-  .ingredient__img__container {
-    width: 100%;
-  }
-  .ingredient__title {
-    font-size: 2.4rem;
-    margin-top: 2.4rem;
-  }
-}
 /* Featuring */
 .featuring {
-  height: 72rem;
+  /* height: 72rem; */
   width: 100%;
-  background-image: url(../assets/images/bg_featuring.png);
-  background-size: cover;
-  background-position: center;
   color: white;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
+  position: relative;
+}
+/* .featuring__bg__img {
+  width: 100%;
+  height: 100%;
+} */
+.featuring__bg__img .bg__img {
+  width: 100%;
+  object-fit: cover;
 }
 .featuring__details {
   width: 64rem;
+  position: absolute;
   height: auto;
   padding: 4rem;
   border-radius: 15px;
   background-color: #7373d7;
   margin-left: 5%;
+  top: 25%;
 }
 .featuring__subtitle {
   font-family: "Rubik";
@@ -570,36 +440,7 @@ header {
   text-transform: uppercase;
   text-decoration: none;
 }
-@media (max-width: 768px) {
-  .featuring {
-    height: 50rem;
-    width: 100%;
-    background-image: url(../assets/images/bg_featuring.png);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-  }
-  .featuring__details {
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
-    padding: 1.6rem;
-    /* margin-top: 50rem; */
-  }
-  .featuring__subtitle {
-    font-size: 1.6rem;
-  }
-  .featuring__name {
-    font-size: 3.2rem;
-    margin: 2.5rem 0;
-  }
-  .featuring__text {
-    margin-bottom: 2.5rem;
-  }
-}
+
 /* insta post */
 .instagram-post__row {
   display: flex;
@@ -649,42 +490,7 @@ header {
 .post__buy:hover {
   color: #7373d7;
 }
-@media (max-width: 992px) {
-  .insta-post__product,
-  .insta-post__product--second {
-    height: 70rem;
-  }
-  .post__name {
-    font-size: 3.7rem;
-  }
-}
-@media (max-width: 768px) {
-  .instagram-post__row {
-    margin: 6rem 4%;
-  }
-  .instagram-post__row {
-    flex-direction: column;
-  }
-  .insta-post__product,
-  .insta-post__product--second {
-    width: 100%;
-    height: 65rem;
-    padding: 1.6rem;
-  }
-  .insta-post__product {
-    margin-bottom: 2rem;
-  }
-  .post__name {
-    font-size: 3.2rem;
-    margin-bottom: 1.5rem;
-  }
-}
-@media (max-width: 592px) {
-  .insta-post__product,
-  .insta-post__product--second {
-    height: 50rem;
-  }
-}
+
 /* featured */
 .featured {
   width: 100%;
@@ -711,6 +517,235 @@ header {
 .featured__logo {
   margin: 0 auto;
 }
+@media (max-width: 1200px) {
+  .product {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 1100px) {
+  .featuring {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+    .featuring__details {
+    position: relative;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  .featuring__bg__img {
+    top: 0;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .header__title {
+    font-size: 6rem;
+  }
+
+  .brand-name__title,
+  .brand-name__title--blue {
+    /* padding: 0 4%; */
+    text-align: center;
+  }
+  .brand-name__row {
+    overflow-x: auto;
+    padding-bottom: 6rem;
+  }
+  .brand-name__item {
+    flex: 1 0 25%;
+    padding: 0 2rem;
+  }
+
+  .insta-post__product,
+  .insta-post__product--second {
+    height: 70rem;
+  }
+  .post__name {
+    font-size: 3.7rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 5rem;
+  }
+  .header__container {
+    margin: 0 50px;
+  }
+  .header__subtitle {
+    font-size: 1.4rem;
+  }
+
+
+  .products__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .products__arrow {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+  }
+  .product {
+    width: 80vw;
+    height: 40rem;
+  }
+  .products__title {
+    font-size: 2.4rem;
+  }
+  .horyzontal-line__product {
+    top: 35rem;
+  }
+  .product__link--add-to-cart {
+    top: 36rem;
+  }
+  .product__text {
+    width: 80vw;
+  }
+
+  .brand-name__question {
+    font-size: 1.4rem;
+  }
+  .brand-name__title,
+  .brand-name__title--blue {
+    font-size: 2.4rem;
+  }
+  .brand-name__item {
+    flex: 1 0 50%;
+    margin: 0;
+  }
+
+  .collection__row {
+    padding-top: 4rem;
+  }
+  .collection__row h2 {
+    font-size: 3.2rem;
+  }
+  .collection__text {
+    font-size: 1.7rem;
+  }
+  .post__img {
+    width: 60vw;
+  }
+  .post__text {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .ingredient__row {
+    flex-direction: column-reverse;
+  }
+  .ingredient__row-second {
+    flex-direction: column;
+  }
+  .ingredient__description,
+  .ingredient__img__container {
+    width: 100%;
+  }
+  .ingredient__title {
+    font-size: 2.4rem;
+    margin-top: 2.4rem;
+  }
+
+  .featuring__details {
+    padding: 2rem;
+  }
+  .featuring__bg__img {
+    top: 0;
+  }
+  .bg__img {
+    height: 30rem;
+  }
+  .featuring__subtitle {
+    font-size: 1.6rem;
+  }
+  .featuring__name {
+    font-size: 3.2rem;
+    margin: 2.5rem 0;
+  }
+  .featuring__text {
+    margin-bottom: 2.5rem;
+  }
+  .featuring__btn {
+    width: 16rem;
+    height: 4rem;
+    border-radius: 2rem;
+  }
+
+  .instagram-post__row {
+    margin: 6rem 4%;
+  }
+  .instagram-post__row {
+    flex-direction: column;
+  }
+  .insta-post__product,
+  .insta-post__product--second {
+    width: 100%;
+    height: 65rem;
+    padding: 1.6rem;
+  }
+  .insta-post__product {
+    margin-bottom: 2rem;
+  }
+  .post__name {
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+
+@media (max-width: 592px) {
+  .header__container {
+    margin: 0 20px;
+    top: 60%;
+  }
+  .header__title {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  .header__btn {
+    width: 16rem;
+    height: 4rem;
+    border-radius: 2rem;
+  }
+  .header__btn a {
+    font-size: 1.4rem;
+  }
+
+  .brand-name__item {
+    flex: 1 0 100%;
+  }
+  .brand-name__title,
+  .brand-name__title--blue {
+    font-size: 2rem;
+  }
+  .item__img {
+    margin-top: 5rem;
+  }
+
+  .post__img {
+    width: 80vw;
+  }
+
+  .insta-post__product,
+  .insta-post__product--second {
+    height: 50rem;
+  }
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
   .featred__row {
     grid-template-columns: 1fr 1fr;
@@ -729,5 +764,9 @@ header {
   }
   .featured__title {
     padding-top: 4rem;
+  }
+
+  .featuring__bg__img {
+    box-sizing: border-box;
   }
 }
