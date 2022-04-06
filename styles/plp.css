@@ -2,6 +2,12 @@
 @import url(./footer.css);
 @import url(./navigation.css);
 
+.plp {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 header {
   background: url(../assets/images/plp_bg.png) no-repeat center center / cover;
   width: 100%;
@@ -13,56 +19,32 @@ header {
   left: 4%;
 }
 .header__title {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
   font-size: 52px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 .header__text {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 160%;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 50rem;
-}
-@media(max-width: 992px) {
-  header {
-    height: 70vh;
-  }
-  .header__container {
-    top: 50%;
-  }
-}
-@media(max-width: 768px) {
-  header {
-    height: 90vh;
-  }
-  .header__container {
-    top: 60%;
-  }
-  .header__title {
-    font-size: 32px;
-    margin-bottom: 1.3rem;
-  }
-  .header__text {
-    width: 70%;
-  }
 }
 .products__container {
   margin: 0 4%;
-  border: 2px solid blue;
 }
-.breadcrumb{
+.breadcrumb {
   margin-top: 1.6rem;
-  margin-bottom: 4.2rem;
+  margin-bottom: 2.6rem;
 }
 .breadcrumb__link--light {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -71,38 +53,57 @@ header {
   text-decoration: none;
 }
 .breadcrumb__link--dark {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   color: #222222;
   text-decoration: none;
 }
+.sort__by {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.8rem 0;
+}
+.sort__by__text {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #222222;
+  display: flex;
+  align-items: center;
+}
+.sort__by__icon {
+  margin-left: 2rem;
+}
 .products__row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 5rem 2.4rem ;
+  gap: 5rem 2.4rem;
 }
 .product {
   background-color: #7373d7;
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: center;
   position: relative;
 }
 .product__img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .horyzontal-line__product {
   border-top: 1px solid #ffffff;
   position: absolute;
-  top: 49rem;
+  bottom: 10%;
   width: 90%;
 }
 .product__link--add-to-cart {
   position: absolute;
-  top: 50rem;
+  bottom: 3%;
 }
 .product__link--add-to-cart a {
   font-family: "Rubik";
@@ -118,14 +119,154 @@ header {
   font-size: 16px;
   color: #222222;
   margin: 8px 0;
+  height: auto;
 }
 .product__price del {
   color: #7a7979;
   margin-left: 8px;
 }
-.pppp {
+.product__img--sale,
+.product__img--new {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.product__banner {
   background: url(../assets/images/product__img-bg.png) no-repeat;
   width: 100%;
-  background-size: cover;
+  background-size: contain;
+  display: flex;
   grid-column: 1 / 3;
+  background-position: top center;
+  align-items: flex-end;
+}
+.product__banner__container {
+  margin: 0 4rem 11rem 4rem;
+}
+.product__banner__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 2.4rem;
+}
+.product__banner__name {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+.product__load__more {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5.6rem;
+  margin-bottom: 8rem;
+}
+.load__more__text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: #42210b;
+  margin-bottom: 1.6rem;
+}
+.load__more__btn {
+  width: 19rem;
+  height: 5.5rem;
+  border-radius: 2.8rem;
+  background-color: #7373d7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.load__more__btn--link {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 160%;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  header {
+    height: 70vh;
+  }
+  .header__container {
+    top: 50%;
+  }
+  .products__row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .product__banner {
+    grid-column: 1/3;
+    background-size: cover;
+  }
+  .product__banner__container {
+    padding-top: 30rem;
+    margin: 0 4rem 4rem 4rem;
+  }
+  .product__banner__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    top: 60%;
+  }
+  .header__title {
+    font-size: 32px;
+    margin-bottom: 1.3rem;
+  }
+  .header__text {
+    width: 70%;
+  }
+  .product__banner__container {
+    padding-top: 25rem;
+  }
+  .product__load__more {
+    margin-top: 2.6rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 592px) {
+  .products__row {
+    grid-template-columns: 100%;
+  }
+  .product__banner__container {
+    padding-top: 50rem;
+  }
+  .product__banner {
+    grid-column: 1/2;
+  }
+  .product__banner__title {
+    font-size: 26px;
+    line-height: 110%;
+    margin-bottom: 1.4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .product__banner__container {
+    padding-top: 35rem;
+  }
+  .product__banner__container {
+    margin: 0 2rem 3rem 2rem;
+  }
+}
+@media (max-width: 360px) {
+  .product__banner__container {
+    padding-top: 23rem;
+  }
 }

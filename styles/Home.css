@@ -128,12 +128,10 @@ header {
 
 .product {
   width: 28vw;
-  /* height: 55rem; */
   background-color: #7373d7;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* position: relative; */
 }
 .product__container:not(:first-child) {
   margin-left: 2.4rem;
@@ -142,6 +140,7 @@ header {
 .product__img--new {
   position: absolute;
   top: 5%;
+  object-fit: cover;
   right: 5%;
 }
 .product__img {
@@ -377,15 +376,10 @@ header {
 
 /* Featuring */
 .featuring {
-  /* height: 72rem; */
   width: 100%;
   color: white;
   position: relative;
 }
-/* .featuring__bg__img {
-  width: 100%;
-  height: 100%;
-} */
 .featuring__bg__img .bg__img {
   width: 100%;
   object-fit: cover;
@@ -494,7 +488,6 @@ header {
 /* featured */
 .featured {
   width: 100%;
-  /* height: 37rem; */
   background-color: #7373d7;
 }
 .featured__title {
@@ -517,6 +510,7 @@ header {
 .featured__logo {
   margin: 0 auto;
 }
+
 @media (max-width: 1200px) {
   .product {
     width: 40vw;
@@ -528,7 +522,7 @@ header {
     display: flex;
     flex-direction: column-reverse;
   }
-    .featuring__details {
+  .featuring__details {
     position: relative;
     top: 0;
     width: 100%;
@@ -540,15 +534,12 @@ header {
   }
 }
 
-
 @media (max-width: 992px) {
   .header__title {
     font-size: 6rem;
   }
-
   .brand-name__title,
   .brand-name__title--blue {
-    /* padding: 0 4%; */
     text-align: center;
   }
   .brand-name__row {
@@ -559,7 +550,6 @@ header {
     flex: 1 0 25%;
     padding: 0 2rem;
   }
-
   .insta-post__product,
   .insta-post__product--second {
     height: 70rem;
@@ -568,8 +558,6 @@ header {
     font-size: 3.7rem;
   }
 }
-
-
 
 @media (max-width: 768px) {
   .header__title {
@@ -581,8 +569,6 @@ header {
   .header__subtitle {
     font-size: 1.4rem;
   }
-
-
   .products__row {
     flex-direction: column;
     align-items: flex-start;
@@ -608,7 +594,6 @@ header {
   .product__text {
     width: 80vw;
   }
-
   .brand-name__question {
     font-size: 1.4rem;
   }
@@ -620,7 +605,6 @@ header {
     flex: 1 0 50%;
     margin: 0;
   }
-
   .collection__row {
     padding-top: 4rem;
   }
@@ -638,7 +622,6 @@ header {
     margin-top: 1rem;
     margin-bottom: 4rem;
   }
-
   .ingredient__row {
     flex-direction: column-reverse;
   }
@@ -653,7 +636,6 @@ header {
     font-size: 2.4rem;
     margin-top: 2.4rem;
   }
-
   .featuring__details {
     padding: 2rem;
   }
@@ -678,7 +660,6 @@ header {
     height: 4rem;
     border-radius: 2rem;
   }
-
   .instagram-post__row {
     margin: 6rem 4%;
   }
@@ -700,8 +681,6 @@ header {
   }
 }
 
-
-
 @media (max-width: 592px) {
   .header__container {
     margin: 0 20px;
@@ -719,7 +698,6 @@ header {
   .header__btn a {
     font-size: 1.4rem;
   }
-
   .brand-name__item {
     flex: 1 0 100%;
   }
@@ -730,21 +708,14 @@ header {
   .item__img {
     margin-top: 5rem;
   }
-
   .post__img {
     width: 80vw;
   }
-
   .insta-post__product,
   .insta-post__product--second {
     height: 50rem;
   }
 }
-
-
-
-
-
 
 @media (max-width: 768px) {
   .featred__row {
@@ -765,7 +736,6 @@ header {
   .featured__title {
     padding-top: 4rem;
   }
-
   .featuring__bg__img {
     box-sizing: border-box;
   }
