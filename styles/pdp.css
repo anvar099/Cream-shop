@@ -302,7 +302,15 @@
 }
 .active,
 .accordion:hover {
-  background-color: #ccc;
+  background-color: #7373d7;
+  color: white;
+  
+}
+.active,
+.accordion:focus {
+  background-color: #7373d7;
+  color: white;
+
 }
 .panel {
   padding: 0 18px;
@@ -325,11 +333,15 @@
   float: right;
   margin-left: 5px;
 }
-
-.active:after {
+.accordion:hover::after {
+  color: white;
+}
+.active::after {
   content: "\f068";
   font-size: 13px;
   color: #7373d7;
   float: right;
   margin-left: 5px;
 }
+
+
