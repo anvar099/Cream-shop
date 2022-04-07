@@ -38,7 +38,7 @@
 }
 .horyzontal-line__white {
   border-top: 1px solid #ffffff;
-  margin: 0 3%;
+  margin: 0 4%;
   padding-bottom: 2rem;
 }
 .nav__bar {
@@ -46,7 +46,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 3%;
+  margin: 0 4%;
   padding: 1.4rem 0;
 }
 .nav__links {
@@ -81,20 +81,20 @@
   }
   .horyzontal-line__white {
     border-top: 1px solid #ffffff;
-    margin: 0 3%;
+    margin: 0 4%;
     padding-bottom: 0.8rem;
   }
   .nav__hamburger {
     display: block;
     text-transform: uppercase;
     position: absolute;
-    left: 3%;
+    left: 4%;
     z-index: 9999;
   }
   .nav__cart-mobile {
     display: block;
     position: absolute;
-    right: 3%;
+    right: 4%;
   }
   .nav__item a {
     font-size: 12px;

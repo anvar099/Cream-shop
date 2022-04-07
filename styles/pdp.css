@@ -1,0 +1,335 @@
+@import url(./base.css);
+@import url(./navigation.css);
+@import url(./footer.css);
+
+.pdp {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.shipping-message__text,
+.nav__hamburger,
+.nav__item a,
+.nav__cart-mobile {
+  color: #222222;
+}
+.navbar {
+  position: relative;
+}
+.horyzontal-line__white {
+  border-top: 1px solid #222222;
+}
+.breadcrumb {
+  margin: 30px 4% 40px 4%;
+  display: flex;
+  align-items: center;
+}
+.breadcrumb__link--light {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #555555;
+  opacity: 0.5;
+  text-decoration: none;
+}
+.breadcrumb__link--dark {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+}
+.slash-light {
+  color: #afacac;
+  margin: 0 8px;
+  font-size: 18px;
+}
+.slash-dark {
+  color: #222222;
+  margin: 0 8px;
+  font-size: 18px;
+  display: none;
+}
+/* slycing carousel */
+.product__container__row {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid yellow; */
+  padding: 0 4%;
+}
+.product__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  /* border: 2px solid red; */
+  box-sizing: border-box;
+}
+.product__column__list {
+  /* border: 2px solid blue; */
+  width: 6vw !important;
+  height: 69rem;
+  overflow: hidden;
+}
+.slick-list.draggable {
+  /* border: 2px solid gold; */
+  padding: 0px !important;
+  height: 100% !important;
+}
+.product__column__list .slick-track {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  width: 100% !important;
+  height: 100% !important;
+  transform: unset !important;
+}
+
+.product__item {
+  width: 100% !important;
+  height: 11.3rem !important;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+}
+.product__item .product__item--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  background-color: #7373d7;
+}
+.product__selected {
+  width: 37vw !important;
+  height: 69rem;
+}
+.product__selected img {
+  width: 100% !important;
+  height: 69rem;
+  object-fit: cover !important;
+  background-color: #7373d7;
+  /* border: 2px solid rebeccapurple; */
+}
+
+.product__details__container {
+  width: 35%;
+  margin-left: 5%;
+}
+.d__product__name {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 8px;
+}
+.d__product__price {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222222;
+}
+.d__product__description {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  color: #222222;
+  margin: 24px 0;
+}
+.d__product__sizes {
+  display: flex;
+  margin: 16px 0 24px 0;
+}
+.d__product__size {
+  border: 1px solid #b7b7b7;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: #222222;
+  opacity: 0.5;
+  padding: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.d__product__size:hover {
+  border: 1px solid #7373d7;
+  color: #222222;
+  opacity: 2;
+}
+.subscription-price {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  color: #222222;
+}
+.subscription-price a {
+  color: #222222;
+}
+.product__checked {
+  position: relative;
+  margin: 10px 0 0;
+}
+.product__checked input[type="radio"] {
+  display: none;
+}
+.product__checked .subscription-price::before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 1px solid #7373d7;
+  background-color: transparent;
+  cursor: pointer;
+}
+.product__checked input[type="radio"]:checked + .subscription-price::after {
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 9px;
+  left: 4px;
+  content: " ";
+  display: block;
+  background-color: #7373d7;
+}
+.d__product__number {
+  display: flex;
+  width: 100%;
+  height: 5.5rem;
+  margin: 25px 0 14px 0;
+}
+.d__product__incrementor {
+  user-select: none;
+  width: 30%;
+  border: 1px solid #b7b7b7;
+  border-right: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Rubik";
+  font-weight: 500;
+}
+.d__product__incrementor #minus,
+.d__product__incrementor #plus {
+  font-weight: 400;
+  font-size: 25px;
+  cursor: pointer;
+}
+.d__product__incrementor #minus:hover,
+.d__product__incrementor #plus:hover {
+  color: #7373d7;
+}
+.d__product__btn {
+  width: 70%;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 160%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7373d7;
+  cursor: pointer;
+}
+.d__product__btn--link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+.d__product__sponsor {
+  display: flex;
+  align-items: center;
+}
+.d__product__sponsor p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  color: #222222;
+}
+.d__product__sponsor a {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  text-decoration-line: underline;
+  color: #7373d7;
+  margin-left: 8px;
+}
+
+.accordion__container {
+  margin: 28px 0 49px 0;
+}
+.accordion {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #222222;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 16px 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.accordion__item {
+  border-bottom: 1px solid #b7b7b7;
+}
+.accordion__item:first-child {
+  border-top: 1px solid #b7b7b7;
+}
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  color: #222222;
+}
+
+.accordion::after {
+  content: "\2b";
+  font-size: 18px;
+  color: #7373d7;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\f068";
+  font-size: 13px;
+  color: #7373d7;
+  float: right;
+  margin-left: 5px;
+}

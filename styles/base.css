@@ -10,3 +10,20 @@ html {
   box-sizing: border-box;
   font-size: 10px;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7373d7;
+  border-radius: 4px;
+}
