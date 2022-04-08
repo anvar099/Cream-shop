@@ -1,16 +1,31 @@
 // Carousel
-$(".product__selected").slick({
+$(".d__product__selected").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
+  arrows: true,
   fade: true,
-  asNavFor: ".product__column__list",
-
+  asNavFor: ".d__product__column__list",
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: ".d__prev__card",
+        nextArrow: ".d__next__card",
+        arrows: true,
+        dots: true,
+        autoplay: true,
+        fade: false,
+        autoplaySpeed: 2000,
+      },
+    },
+  ],
 });
-$(".product__column__list").slick({
+$(".d__product__column__list").slick({
   slidesToShow: 5,
   slidesToScroll: 0,
-  asNavFor: ".product__selected",
+  asNavFor: ".d__product__selected",
   dots: false,
   centerMode: true,
   focusOnSelect: true,
@@ -18,15 +33,15 @@ $(".product__column__list").slick({
 
 
 // incrementor
-$("#plus").click(function () {
+$("#d__plus").click(function () {
   changeValue(1);
 });
-$("#minus").click(function () {
+$("#d__minus").click(function () {
   changeValue(-1);
 });
 
 function changeValue(val) {
-  var container = $("#value");
+  var container = $("#d__value");
   var current = parseInt(container.html(), 10);
 
   container.html(Math.max(0, current + val).toString());
@@ -66,3 +81,31 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
+$(".products__info").slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  // autoplay: true,
+  // autoplaySpeed: 2000,
+  nextArrow: ".next__card",
+  variableWidth: true,
+  prevArrow: ".prev__card",
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 592,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
