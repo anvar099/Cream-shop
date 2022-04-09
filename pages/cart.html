@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/cart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cream Shop</title>
+  </head>
+  <body>
+    <section class="navbar">
+      <div class="shipping-message">
+        <p class="shipping-message__text">
+          Free Shipping for all orders over $100
+        </p>
+      </div>
+      <div class="horyzontal-line__white"></div>
+      <div class="nav nav__container">
+        <input
+          type="checkbox"
+          name="nav__check"
+          id="nav__check"
+          class="nav__check"
+        />
+        <label for="nav__check" class="nav__hamburger">menu</label>
+        <div class="nav__logo">
+          <a href="../index.html" class="nav__logo-link"
+            ><img
+              class="logo__img"
+              src="../assets/icons/logo--black.svg"
+              alt="nav logo"
+              loading="lazy"
+          /></a>
+        </div>
+        <div class="nav__cart-mobile">
+          <a href="./cart.html">Cart</a>
+        </div>
+        <div class="nav__layer-blur"></div>
+        <nav class="nav__bar">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="../pages/plp.html"> Shop </a>
+            </li>
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item">
+              <a href="#"> Suncrase 101 </a>
+            </li>
+          </ul>
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#"> Account </a>
+            </li>
+            <li class="nav__item"><a href="#">Search</a></li>
+            <li class="nav__item cart"><a href="./cart.html">Cart (0)</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <div class="breadcrumb">
+      <a class="breadcrumb__link--light" href="../index.html">Home</a>
+      <p class="slash-light">/</p>
+      <a class="breadcrumb__link--dark" href="">My Cart</a>
+    </div>
+
+    <!-- Bag -->
+    <section class="bag">
+      <h2 class="bag__title">My Cart</h2>
+      <div class="bag__shipping__progress">
+        <div>
+          <img src="../assets/images/Shipping bar.png" alt="" loading="lazy" />
+          <p class="bag__shipping--text">$12.00 away from Free Shipping</p>
+        </div>
+      </div>
+      <div class="bag__container">
+        <div class="bag__row">
+          <h4 class="bag__row__subtitle">Product</h4>
+          <h4 class="bag__row__subtitle">Price</h4>
+          <h4 class="bag__row__subtitle">Qauntity</h4>
+          <h4 class="bag__row__subtitle">Total</h4>
+        </div>
+        <div class="bag__line"></div>
+
+        <div>
+          <div class="aaaaa">
+            <div class="object__img">
+              <img src="../assets/images/cart__img.png" alt="" loading="lazy" />
+            </div>
+            <div class="bbbbb">
+              <div class="bag__object">
+                <div class="object__description">
+                  <h3 class="object__name">Universal mineral face</h3>
+                  <p class="object__number">Size: 1.7 fl oz</p>
+                  <p class="object__shipping">One Time Purchase</p>
+                  <a class="object__remove" href="#">Remove</a>
+                </div>
+              </div>
+              <div class="bag__object">
+                <p class="object__sale">$28.00</p>
+              </div>
+              <div class="bag__object">
+                <div class="d__product__incrementor">
+                  <a class="d__minus" id="minus__number-1">-</a>
+                  <span class="d__value-1">1</span>
+                  <a class="d__plus" id="plus__number-1">+</a>
+                </div>
+              </div>
+              <div class="bag__object">
+                <p class="object__price">$28.00</p>
+              </div>
+              <a class="object__remove remove-mobile" href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bag__line"></div>
+        <div class="bag__row">
+          <div class="bag__object">
+            <div class="object__img">
+              <img src="../assets/images/cart__img.png" alt="" loading="lazy" />
+            </div>
+            <div class="object__description">
+              <h3 class="object__name">Deepwater Dew Body Serum</h3>
+              <p class="object__number">Size: 3.4 fl oz</p>
+              <p class="object__shipping">One Time Purchase</p>
+              <a class="object__remove" href="#">Remove</a>
+            </div>
+          </div>
+          <div class="bag__object">
+            <p class="object__sale">
+              $28.00 <br />
+              <strike>$32.00</strike>
+            </p>
+          </div>
+          <div class="bag__object">
+            <div class="d__product__incrementor">
+              <a class="d__minus" id="minus__number-2">-</a>
+              <span class="d__value-2">1</span>
+              <a class="d__plus" id="plus__number-2">+</a>
+            </div>
+          </div>
+          <div class="bag__object">
+            <p class="object__price">$28.00</p>
+          </div>
+        </div>
+        <div class="bag__line horyzontal__line"></div>
+        <div class="bag__row">
+          <div class="bag__object">
+            <div class="object__img">
+              <img src="../assets/images/cart__img.png" alt="" loading="lazy" />
+            </div>
+            <div class="object__description">
+              <h3 class="object__name">Isle Glow Face Lotion SPF45</h3>
+              <p class="object__number">Size: 1.5 fl oz</p>
+              <p class="object__shipping">One Time Purchase</p>
+              <a class="object__remove" href="#">Remove</a>
+            </div>
+          </div>
+          <div class="bag__object">
+            <p class="object__sale">$28.00</p>
+          </div>
+          <div class="bag__object">
+            <div class="d__product__incrementor">
+              <a class="d__minus" id="minus__number-3">-</a>
+              <span class="d__value-3">2</span>
+              <a class="d__plus" id="plus__number-3">+</a>
+            </div>
+          </div>
+          <div class="bag__object">
+            <p class="object__price">$56.00</p>
+          </div>
+        </div>
+        <div class="bag__line"></div>
+        <div class="bag__row">
+          <div class="bag__object">
+            <div class="object__img">
+              <img src="../assets/images/cart__img.png" alt="" loading="lazy" />
+            </div>
+            <div class="object__description">
+              <h3 class="object__name">Isle Lip Balm SPF30</h3>
+              <p class="object__number">Size: 0.5 fl oz</p>
+              <p class="object__shipping">(100% OFF)</p>
+              <a class="object__remove" href="#">Remove</a>
+            </div>
+          </div>
+          <div class="bag__object">
+            <p class="object__sale">$0.00</p>
+          </div>
+          <div class="bag__object">
+            <div class="d__product__incrementor">
+              <a class="d__minus" id="minus__number-4">-</a>
+              <span class="d__value-4">0</span>
+              <a class="d__plus" id="plus__number-4">+</a>
+            </div>
+          </div>
+          <div class="bag__object">
+            <p class="object__price">$0.00</p>
+          </div>
+        </div>
+        <div class="bag__line"></div>
+        <div class="bag__form__row">
+          <div class="message">
+            <p>Order Notes</p>
+            <div>
+              <textarea
+                type="text"
+                class="message__tool-bar"
+                placeholder="Type Message..."
+              ></textarea>
+            </div>
+          </div>
+          <div class="c__checkout">
+            <div class="c__checkout__subtotal">
+              <h2>Subtotal</h2>
+              <p>$112.00</p>
+            </div>
+            <p class="c__checkout__text">
+              Shipping and tax calculated at checkout.
+            </p>
+            <div class="c__checkout__discount">
+              <div class="c__checkout__sale">
+                <img src="../assets/icons/discount.svg" alt="" />
+                <p>Auto</p>
+              </div>
+              <p>-$10.00</p>
+            </div>
+            <div class="c__checkout__total">
+              <h2>total</h2>
+              <p>$102.00</p>
+            </div>
+            <div class="c__checkout__secure">
+              <a class="c__checkout__secure--link" href="">secure checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__row">
+        <div class="footer__container">
+          <div class="footer__contact--container">
+            <h4 class="footer__title">Join the club</h4>
+            <p class="footer__paragraph">
+              Keep up with our new releases, beauty tips and what Winnie’s been
+              up to.
+            </p>
+            <div class="footer__input">
+              <img
+                src="../assets/icons/arrow.svg"
+                class="footer__arrow-icon"
+                alt=""
+              />
+              <input
+                class="footer__input-field"
+                placeholder="Email Address"
+                type="email"
+              />
+            </div>
+            <div class="contact__social-media">
+              <div class="social-media__icons">
+                <img
+                  class="social-media__icon"
+                  src="../assets/icons/facebook.svg"
+                  alt=""
+                />
+              </div>
+              <div class="social-media__icons">
+                <img
+                  class="social-media__icon"
+                  src="../assets/icons/twitter.svg"
+                  alt=""
+                />
+              </div>
+              <div class="social-media__icons">
+                <img
+                  class="social-media__icon"
+                  src="../assets/icons/Instagram.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="footer__pagination">
+            <ul class="pagination__column">
+              <li><h3 class="pagination__title">Shop</h3></li>
+              <li class="pagination__link">Shop All</li>
+              <li class="pagination__link">Best Sellers</li>
+              <li class="pagination__link">Universal Mineral</li>
+              <li class="pagination__link">Isie Glow to Isle</li>
+              <li class="pagination__link">Deepwater</li>
+              <li class="pagination__link">Winne Selects</li>
+            </ul>
+            <ul class="pagination__column">
+              <li><h3 class="pagination__title">Learn</h3></li>
+              <li class="pagination__link">About Us</li>
+              <li class="pagination__link">ingredient Glossary</li>
+              <li class="pagination__link">Sun Care 101</li>
+              <li class="pagination__link">Our Journey</li>
+            </ul>
+            <ul class="pagination__column">
+              <li><h3 class="pagination__title">Customer</h3></li>
+              <li class="pagination__link">Contact Us</li>
+              <li class="pagination__link">Help/FAQ</li>
+              <li class="pagination__link">My Account</li>
+              <li class="pagination__link">Shipping and Return</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__comments">
+          <div class="comment__row">
+            <p class="comment__privacy">@ 2021 Cream Shop</p>
+            <div class="comment__policy">
+              <p class="comment__privacy">Terms and conditions</p>
+              <p class="comment__privacy">Privacy Policy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="message__position">
+        <img class="message__icon" src="../assets/icons/message.svg" alt="" />
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/cart.js"></script>
+  </body>
+</html>

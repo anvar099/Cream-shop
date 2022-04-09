@@ -31,7 +31,6 @@ $(".d__product__column__list").slick({
   focusOnSelect: true,
 });
 
-
 // incrementor
 $("#d__plus").click(function () {
   changeValue(1);
@@ -54,8 +53,6 @@ var i;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
-
-
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
@@ -80,6 +77,35 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+$(".results__img__container").slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: true,
+  nextArrow: ".next__slide",
+  variableWidth: true,
+  prevArrow: ".prev__slide",
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 592,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
 
 $(".products__info").slick({
   dots: false,
@@ -87,8 +113,8 @@ $(".products__info").slick({
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
-  // autoplay: true,
-  // autoplaySpeed: 2000,
+  autoplay: true,
+  autoplaySpeed: 2000,
   nextArrow: ".next__card",
   variableWidth: true,
   prevArrow: ".prev__card",
