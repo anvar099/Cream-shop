@@ -690,6 +690,9 @@
 }
 
 @media (max-width: 768px) {
+  .nav__item a{
+    color: white;
+  }
   .breadcrumb {
     display: none;
   }
